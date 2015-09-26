@@ -5,7 +5,7 @@
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
-        android:label="@string/app_name"
+        android:label="Velp"
         android:theme="@style/AppTheme" >
         <activity
             android:name=".MainActivity"
@@ -15,6 +15,14 @@
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+        <activity
+            android:name=".IntroActivity"
+            android:label="Velp" >
+        </activity>
+        <activity
+            android:name=".Donation"
+            android:label="@string/title_activity_donation" >
         </activity>
     </application>
 

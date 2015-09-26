@@ -3,4 +3,11 @@
 
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
+    <string name="title_activity_intro">IntroActivity</string>
+    <string name="pref_previously_started">pref_previously_started</string>
+    <string name="introduction">About Us</string>
+    <string name="greeting">Welcome to Velp!\n  \nHere at Velp, we aim to connect people in need and those willing to lend a hand.\n \nOur mission is to get as much help\nas we could to support problems
+    on our home planet, Earth.\n \nThank you for joining Velp and hope you will find values in what you do.\n\nSincerely,\nThe Velp Team</string>
+    <string name="title_activity_intro2">Intro2Activity</string>
+    <string name="title_activity_donation">Donation</string>
 </resources>
