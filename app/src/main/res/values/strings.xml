@@ -17,6 +17,20 @@
     on our home planet, Earth.\n \nThank you for joining Velp and hope you will find values in what you do.\n\nSincerely,\nThe Velp Team</string>
     <string name="title_activity_intro2">Intro2Activity</string>
 
+    <string-array name="donation_array">
+        <item>Money</item>
+        <item>Clothes</item>
+        <item>Volunteering</item>
+        <item>Food</item>
+    </string-array>
+
+    <string-array name="country_array">
+        <item>Syria</item>
+        <item>Libya</item>
+        <item>Egypt</item>
+        <item>Australia</item>
+    </string-array>
+
     <string-array name="planets_array">
         <item>Mercury</item>
         <item>Venus</item>

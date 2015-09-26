@@ -30,8 +30,8 @@ public class EventActivity extends Activity {
 //        Log.e("key: ", "" + id);
 
 
-        ImageView imageView = (ImageView) findViewById(R.id.mainImageView);
-        imageView.setImageResource(R.drawable.google);
+//        ImageView imageView = (ImageView) findViewById(R.id.mainImageView);
+//        imageView.setImageResource(R.drawable.refugees);
 
 
         ImageButton imageButton1 = (ImageButton) findViewById(R.id.buttonImageView1);
@@ -56,17 +56,17 @@ public class EventActivity extends Activity {
         imageButton2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(EventActivity.this, DonateItemActivity.class);
-                startActivity(intent);
+                Intent intent2 = new Intent(EventActivity.this, DonateItemActivity.class);
+                startActivity(intent2);
             }
         });
 
         imageButton1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(EventActivity.this, PaymentActivity.class);
+                Intent intent3 = new Intent(EventActivity.this, PaymentActivity.class);
 
-                startActivity(intent);
+                startActivity(intent3);
             }
         });
 

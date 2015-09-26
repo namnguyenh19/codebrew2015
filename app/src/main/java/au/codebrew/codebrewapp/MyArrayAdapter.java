@@ -18,6 +18,7 @@ public class MyArrayAdapter extends ArrayAdapter<String> {
     private final Context context;
     private final ArrayList<String> causes;
     private final ArrayList<String> descriptions;
+    int[] imagesArray = new int[] {R.drawable.refugee,R.drawable.a,R.drawable.b,R.drawable.c,R.drawable.d,R.drawable.e,R.drawable.f,R.drawable.g};
 
     public MyArrayAdapter(Context context, ArrayList<String> causes, ArrayList<String> descriptions) {
         super(context, -1, causes);
@@ -36,7 +37,7 @@ public class MyArrayAdapter extends ArrayAdapter<String> {
         TextView textView = (TextView) rowView.findViewById(R.id.firstLine);
         TextView textView2 = (TextView) rowView.findViewById(R.id.secondLine);
 
-        imageView.setImageResource(R.drawable.google);
+        imageView.setImageResource(imagesArray[position]);
         textView.setText(causes.get(position));
         textView2.setText(descriptions.get(position));
 

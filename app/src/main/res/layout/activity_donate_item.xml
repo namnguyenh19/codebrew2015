@@ -8,7 +8,7 @@
     <ImageView
         android:layout_width="fill_parent"
         android:layout_height="175px"
-        android:id="@+id/imageView"
+        android:id="@+id/imageView8"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:layout_alignParentRight="true"
@@ -19,10 +19,12 @@
         android:layout_width="480px"
         android:layout_height="75px"
         android:id="@+id/spinner_country"
-        android:layout_below="@+id/imageView"
+
+        android:layout_below="@+id/imageView8"
         android:spinnerMode="dropdown"
         android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true"/>
+        android:layout_alignParentEnd="true"
+        />
 
     <TextView
         android:layout_width="wrap_content"
@@ -66,7 +68,7 @@
         android:paddingEnd="40px"/>
 
     <ImageView
-        android:id="@+id/imageView2"
+        android:id="@+id/imageView9"
         android:layout_width="wrap_content"
         android:layout_height="500px"
         android:paddingLeft="15px"
@@ -84,7 +86,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/listView"
-        android:layout_below="@+id/imageView2"
+        android:layout_below="@+id/imageView9"
         android:paddingLeft="20px"
         android:paddingRight="20px"
         android:layout_toLeftOf="@+id/spinner_state"
