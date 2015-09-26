@@ -33,10 +33,8 @@ public class VolunApply extends Activity {
     private EditText address;
     private Button submit;
     private Bitmap bitmap;
-private ImageView imageView;
-
-
-   private String EventID;
+    private ImageView imageView;
+    private String EventID;
 
 
     @Override
@@ -56,23 +54,16 @@ private ImageView imageView;
         address = (EditText)findViewById(R.id.editText7);
 
         submit = (Button)findViewById(R.id.submit);
-
-
-imageView = (ImageView)findViewById(R.id.imageView);
+        imageView = (ImageView)findViewById(R.id.imageView);
 
         VolunteerHP instance = new VolunteerHP();
         EventID = instance.getEventID();
 
-
-
         //<------------BUTTON SUBMIT/PASS TO DATABASE--------------->
-
 
         submit.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
-
                 ParseObject volunteerApplication = new ParseObject("VolunteerApplication");
                 volunteerApplication.put("firstName", firstName.getText().toString());
                 volunteerApplication.put("lastName", lastName.getText().toString());
@@ -86,88 +77,37 @@ imageView = (ImageView)findViewById(R.id.imageView);
 
                 Intent intent = new Intent(VolunApply.this, VolunResult.class);
                 startActivity(intent);
-
-
             }
         });
 
-
         //<------------SET PICTURE---------------->
-
-
-
         //<-----------------------Fetch data from database------------------------>
-
-
-
 
         ParseQuery<ParseObject> query = ParseQuery.getQuery("Event");
         query.getInBackground(EventID, new GetCallback<ParseObject>() {
             public void done(ParseObject object, ParseException e) {
                 if (e == null) {
                     // object will be your game score
-
-
                     ParseFile EventImage = (ParseFile) object.get("Image");
                     EventImage.getDataInBackground(new GetDataCallback() {
                         public void done(byte[] data, ParseException e) {
                             if (e == null) {
-
                                 Bitmap bmp = BitmapFactory.decodeByteArray(data, 0, data.length);
                                 bmp = Bitmap.createScaledBitmap(bmp, 400, 100, false);
 
                                 imageView.setImageBitmap(bmp);
-
-
                             } else {
                                 // something went wrong
                             }
                         }
                     });
-
-
                 } else {
                     // something went wrong
                 }
             }
         });
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-Bundle bundle = getIntent().getExtras();
-volun_name = bundle.getString("message");
-
-
+        Bundle bundle = getIntent().getExtras();
+        volun_name = bundle.getString("message");
         volunname.setText(volun_name);
-
-
-
-
-
-
-
-
-
     }
-
-
 }

@@ -18,14 +18,12 @@ public class VolunArrayAdapter extends ArrayAdapter<String>{
 
     private final Context context;
     private final ArrayList<String> causes;
-
     private Button apply;
 
     public VolunArrayAdapter(Context context, ArrayList<String> causes) {
         super(context, -1, causes);
         this.context = context;
         this.causes = causes;
-
     }
 
     @Override
@@ -33,58 +31,21 @@ public class VolunArrayAdapter extends ArrayAdapter<String>{
         LayoutInflater inflater = (LayoutInflater) context
                 .getSystemService(Context.LAYOUT_INFLATER_SERVICE);
         View rowView = inflater.inflate(R.layout.rawlayout, parent, false);
-
         apply = (Button)rowView.findViewById(R.id.icon);
-
         final TextView textView = (TextView) rowView.findViewById(R.id.firstLine);
-
-
 
         textView.setText(causes.get(position));
 
-
-
-
-
-
-
        // <-----------------BUTTON APPLY---------------------->
-
-
 
         apply.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
                 Intent intent = new Intent(context, VolunApply.class);
-
-
-
                 intent.putExtra("message", textView.getText().toString());
-
                 context.startActivity(intent);
-
-
-
             }
         });
-
-
-
-
-
-
-
         return rowView;
-
-
-
     }
-
-
-
-
-
-
-
 }

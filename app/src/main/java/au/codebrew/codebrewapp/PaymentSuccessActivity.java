@@ -12,12 +12,6 @@ import android.widget.ImageButton;
 
 public class PaymentSuccessActivity extends Activity {
 
-
-
-
-
-
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

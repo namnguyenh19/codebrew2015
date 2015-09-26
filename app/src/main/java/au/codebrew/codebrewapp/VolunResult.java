@@ -10,23 +10,17 @@ import android.widget.TextView;
 
 
 public class VolunResult extends Activity {
-
-
     private TextView result;
     private Button button;
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_volun_result);
-
-
         result = (TextView)findViewById(R.id.result);
-
-        result.setText("Thank you.\n for your details.\n \n We will keep you updated by email. \n \n ------------------\n The world is a better place with your help.");
-
-button = (Button)findViewById(R.id.button);
+        result.setText("Thank you.\n for your details.\n \n We will keep you updated by email. \n "+
+                "\n ------------------\n The world is a better place with your help.");
+        button = (Button)findViewById(R.id.button);
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -34,10 +28,5 @@ button = (Button)findViewById(R.id.button);
                 startActivity(intent);
             }
         });
-
-
-
     }
-
-
 }
