@@ -1,5 +1,6 @@
 package au.codebrew.codebrewapp;
 
+import android.content.SharedPreferences;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.support.v7.app.AppCompatActivity;
@@ -40,6 +41,18 @@ public class MainActivity extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
+        SharedPreferences prefs = getSharedPreferences("prefs", 0);
+        boolean firstRun = prefs.getBoolean("firstRun", false);
+        if(firstRun == false) {
+            SharedPreferences.Editor editor = prefs.edit();
+            editor.putBoolean("firstRun",true);
+            editor.commit();
+            Intent intent = new Intent(MainActivity.this,IntroActivity.class);
+            startActivity(intent);
+            finish();
+        }
+
         setContentView(R.layout.activity_main);
         final ListView listview = (ListView) findViewById(R.id.mainListview);
 

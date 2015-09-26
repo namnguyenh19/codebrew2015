@@ -11,6 +11,11 @@
     <string name="title_activity_payment_success">PaymentSuccessActivity</string>
     <string name="confirmation">Thanks for supporting our goal to build a better world. You will receive a confirmation email and your rewards shortly.</string>
     <string name="title_activity_donate_item">DonateItemActivity</string>
+    <string name="pref_previously_started">pref_previously_started</string>
+    <string name="introduction">About Us</string>
+    <string name="greeting">Welcome to Velp!\n  \nHere at Velp, we aim to connect people in need and those willing to lend a hand.\n \nOur mission is to get as much help\nas we could to support problems
+    on our home planet, Earth.\n \nThank you for joining Velp and hope you will find values in what you do.\n\nSincerely,\nThe Velp Team</string>
+    <string name="title_activity_intro2">Intro2Activity</string>
 
     <string-array name="planets_array">
         <item>Mercury</item>
@@ -22,4 +27,5 @@
         <item>Uranus</item>
         <item>Neptune</item>
     </string-array>
+    <string name="title_activity_intro">IntroActivity</string>
 </resources>

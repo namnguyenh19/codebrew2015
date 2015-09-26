@@ -49,6 +49,10 @@
             android:name=".DonateItemActivity"
             android:label="@string/title_activity_donate_item" >
         </activity>
+        <activity
+            android:name=".IntroActivity"
+            android:label="@string/title_activity_intro" >
+        </activity>
     </application>
 
 </manifest>
