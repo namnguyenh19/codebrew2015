@@ -1,11 +1,13 @@
 package au.codebrew.codebrewapp;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.util.Log;
+import android.view.View;
 import android.widget.ImageButton;
 import android.widget.ImageView;
 
@@ -31,6 +33,22 @@ public class EventActivity extends Activity {
         imageButton1.setImageResource(R.drawable.moneybutton);
         imageButton2.setImageResource(R.drawable.itemsbutton);
         imageButton3.setImageResource(R.drawable.volunteerbutton);
+
+
+
+
+        imageButton3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(EventActivity.this, VolunteerHP.class);
+                startActivity(intent);
+            }
+        });
+
+
+
+
+
 
     }
 

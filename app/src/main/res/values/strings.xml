@@ -4,4 +4,7 @@
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
     <string name="title_activity_event">EventActivity</string>
+    <string name="title_activity_volunteer_hp">VolunteerHP</string>
+    <string name="title_activity_volun_apply">VolunApply</string>
+    <string name="title_activity_volun_result">VolunResult</string>
 </resources>
