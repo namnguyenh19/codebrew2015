@@ -13,10 +13,17 @@
         android:layout_height="wrap_content">
 
         <ImageView
+            android:id="@+id/banner"
             android:layout_width="match_parent"
-            android:layout_height="133dp"
-            android:src="@drawable/banner"
-            android:layout_gravity="center_horizontal" />
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:scaleType="centerCrop"
+            android:src="@drawable/banner"/>
+
+        <NumberPicker
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/numberPicker" />
 
         <ListView xmlns:android="http://schemas.android.com/apk/res/android"
             android:id="@+id/mainListview"

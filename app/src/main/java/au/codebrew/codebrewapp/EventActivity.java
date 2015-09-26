@@ -1,5 +1,6 @@
 package au.codebrew.codebrewapp;
 
+import android.app.ActionBar;
 import android.app.Activity;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -8,6 +9,10 @@ import android.view.MenuItem;
 import android.util.Log;
 import android.widget.ImageButton;
 import android.widget.ImageView;
+import android.content.Intent;
+import android.support.v4.app.NavUtils;
+import android.support.v7.app.ActionBarActivity;
+import android.support.v4.app.TaskStackBuilder;
 
 public class EventActivity extends Activity {
 
@@ -16,21 +21,25 @@ public class EventActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_event);
 
+        getActionBar().setDisplayHomeAsUpEnabled(true);
+
+
 //        int id = this.getIntent().getExtras().getInt("key");
 //        Log.e("key: ", "" + id);
+
 
         ImageView imageView = (ImageView) findViewById(R.id.mainImageView);
         imageView.setImageResource(R.drawable.google);
 
 
-        ImageButton imageButton1 = (ImageButton) findViewById(R.id.buttonImageView1);
-        ImageButton imageButton2 = (ImageButton) findViewById(R.id.buttonImageView2);
-        ImageButton imageButton3 = (ImageButton) findViewById(R.id.buttonImageView3);
-
-
-        imageButton1.setImageResource(R.drawable.moneybutton);
-        imageButton2.setImageResource(R.drawable.itemsbutton);
-        imageButton3.setImageResource(R.drawable.volunteerbutton);
+//        ImageButton imageButton1 = (ImageButton) findViewById(R.id.buttonImageView1);
+//        ImageButton imageButton2 = (ImageButton) findViewById(R.id.buttonImageView2);
+//        ImageButton imageButton3 = (ImageButton) findViewById(R.id.buttonImageView3);
+//
+//
+//        imageButton1.setImageResource(R.drawable.moneybutton);
+//        imageButton2.setImageResource(R.drawable.itemsbutton);
+//        imageButton3.setImageResource(R.drawable.volunteerbutton);
 
     }
 
@@ -55,4 +64,5 @@ public class EventActivity extends Activity {
 
         return super.onOptionsItemSelected(item);
     }
+
 }

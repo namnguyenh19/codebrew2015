@@ -40,7 +40,6 @@ public class MyArrayAdapter extends ArrayAdapter<String> {
         textView.setText(causes.get(position));
         textView2.setText(descriptions.get(position));
 
-
         return rowView;
     }
 }
