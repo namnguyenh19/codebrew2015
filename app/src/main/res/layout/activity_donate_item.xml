@@ -82,13 +82,17 @@
         android:layout_alignEnd="@+id/spinner_state"
         android:paddingTop="20px"/>
 
-    <ImageButton
-        android:layout_width="40px"
-        android:layout_height="40px"
-        android:id="@+id/imageButton"
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/listView"
         android:layout_below="@+id/imageView2"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:src="@drawable/map_pin"/>
+        android:paddingLeft="20px"
+        android:paddingRight="20px"
+        android:layout_toLeftOf="@+id/spinner_state"
+        android:layout_toStartOf="@+id/spinner_state"
+        android:layout_alignRight="@+id/spinner_state"
+        android:layout_alignEnd="@+id/spinner_state"
+        android:choiceMode="singleChoice"/>
 
 </RelativeLayout>
