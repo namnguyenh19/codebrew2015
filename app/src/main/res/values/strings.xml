@@ -7,4 +7,7 @@
     <string name="title_activity_volunteer_hp">VolunteerHP</string>
     <string name="title_activity_volun_apply">VolunApply</string>
     <string name="title_activity_volun_result">VolunResult</string>
+    <string name="title_activity_payment">PaymentActivity</string>
+    <string name="title_activity_payment_success">PaymentSuccessActivity</string>
+    <string name="confirmation">Thanks for supporting our goal to build a better world. You will receive a confirmation email and your rewards shortly.</string>
 </resources>

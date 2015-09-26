@@ -36,7 +36,6 @@ public class EventActivity extends Activity {
 
 
 
-
         imageButton3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -45,10 +44,14 @@ public class EventActivity extends Activity {
             }
         });
 
+        imageButton1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(EventActivity.this, PaymentActivity.class);
 
-
-
-
+                startActivity(intent);
+            }
+        });
 
     }
 
