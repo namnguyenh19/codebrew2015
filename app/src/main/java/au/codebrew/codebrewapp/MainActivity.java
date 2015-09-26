@@ -108,7 +108,7 @@ public class MainActivity extends Activity {
 //                        });
 
                 Intent intent = new Intent(MainActivity.this, EventActivity.class);
-                intent.putExtra("key", 1);
+                //intent.putExtra("key", 1);
                 startActivity(intent);
                 finish();
             }

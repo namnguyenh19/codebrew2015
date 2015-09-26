@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.util.Log;
+import android.widget.ImageButton;
 import android.widget.ImageView;
 
 public class EventActivity extends Activity {
@@ -15,11 +16,21 @@ public class EventActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_event);
 
-        int id = this.getIntent().getExtras().getInt("key");
-        Log.e("key: ",""+id);
+//        int id = this.getIntent().getExtras().getInt("key");
+//        Log.e("key: ", "" + id);
 
         ImageView imageView = (ImageView) findViewById(R.id.mainImageView);
         imageView.setImageResource(R.drawable.google);
+
+
+        ImageButton imageButton1 = (ImageButton) findViewById(R.id.buttonImageView1);
+        ImageButton imageButton2 = (ImageButton) findViewById(R.id.buttonImageView2);
+        ImageButton imageButton3 = (ImageButton) findViewById(R.id.buttonImageView3);
+
+
+        imageButton1.setImageResource(R.drawable.moneybutton);
+        imageButton2.setImageResource(R.drawable.itemsbutton);
+        imageButton3.setImageResource(R.drawable.volunteerbutton);
 
     }
 
