@@ -1,0 +1,94 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:context="au.codebrew.codebrewapp.DonateItemActivity"
+                android:id="@+id/relative_layout">
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="175px"
+        android:id="@+id/imageView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:src="@drawable/german_red_cross"/>
+
+    <Spinner
+        android:layout_width="480px"
+        android:layout_height="75px"
+        android:id="@+id/spinner_country"
+
+        android:layout_below="@+id/imageView"
+        android:spinnerMode="dropdown"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Select Country"
+        android:id="@+id/textView_country"
+        android:gravity="center_vertical|right"
+        android:textSize="15dp"
+        android:layout_alignTop="@+id/spinner_country"
+        android:layout_toLeftOf="@+id/spinner_country"
+        android:layout_toStartOf="@+id/spinner_country"
+        android:layout_above="@+id/spinner_state"
+        android:paddingRight="40px"
+        android:paddingEnd="40px"
+        />
+
+    <Spinner
+        android:layout_width="480px"
+        android:layout_height="75px"
+        android:id="@+id/spinner_state"
+        android:spinnerMode="dropdown"
+        android:layout_below="@+id/spinner_country"
+        android:layout_toRightOf="@+id/textView_country"
+        android:layout_toEndOf="@+id/textView_country"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="State"
+        android:id="@+id/textView"
+        android:gravity="center_vertical|right"
+        android:textSize="15dp"
+        android:layout_alignBottom="@+id/spinner_state"
+        android:layout_toLeftOf="@+id/spinner_state"
+        android:layout_toStartOf="@+id/spinner_state"
+        android:layout_below="@+id/spinner_country"
+        android:paddingRight="40px"
+        android:paddingEnd="40px"/>
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="500px"
+        android:paddingLeft="15px"
+        android:paddingRight="15px"
+        android:src="@drawable/melbourne"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/spinner_state"
+        android:cropToPadding="true"
+        android:layout_alignRight="@+id/spinner_state"
+        android:layout_alignEnd="@+id/spinner_state"
+        android:paddingTop="20px"/>
+
+    <ImageButton
+        android:layout_width="40px"
+        android:layout_height="40px"
+        android:id="@+id/imageButton"
+        android:layout_below="@+id/imageView2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:src="@drawable/map_pin"/>
+
+</RelativeLayout>
