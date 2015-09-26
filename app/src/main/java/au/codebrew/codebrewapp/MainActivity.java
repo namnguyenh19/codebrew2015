@@ -27,7 +27,7 @@ import com.parse.ParseQuery;
 
 public class MainActivity extends Activity {
 
-    final String[] EVEID = {"X66VaIcndS","Ng5vXZHZXO","7A93yxSnaH","Kqc5B8FEx4","dI8LwOJRim","M4beADfW90","0XmrQgRy1c","wcMBey5leA"};
+    //final String[] EVEID = {"X66VaIcndS","Ng5vXZHZXO","7A93yxSnaH","Kqc5B8FEx4","dI8LwOJRim","M4beADfW90","0XmrQgRy1c","wcMBey5leA"};
 
     private String[] values = new String[8];
     private String[] values2 = new String[8];
@@ -36,7 +36,7 @@ public class MainActivity extends Activity {
     private ArrayList<String> causesList = new ArrayList<String>();
     private ArrayList<String> descriptionList = new ArrayList<String>();
     private ArrayList<Bitmap> imageList = new ArrayList<Bitmap>();
-    private int i;
+    //private int i;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
