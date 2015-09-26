@@ -28,22 +28,19 @@ public class MainActivity extends Activity {
 
     final String[] EVEID = {"X66VaIcndS","Ng5vXZHZXO","7A93yxSnaH","Kqc5B8FEx4","dI8LwOJRim","M4beADfW90","0XmrQgRy1c","wcMBey5leA"};
 
-private String[] values = new String[8];
+    private String[] values = new String[8];
     private String[] values2 = new String[8];
     private Bitmap[] eventBitmap = new Bitmap[8];
 
     private ArrayList<String> causesList = new ArrayList<String>();
-   private ArrayList<String> descriptionList = new ArrayList<String>();
-private ArrayList<Bitmap> imageList = new ArrayList<Bitmap>();
-private int i;
-
-
+    private ArrayList<String> descriptionList = new ArrayList<String>();
+    private ArrayList<Bitmap> imageList = new ArrayList<Bitmap>();
+    private int i;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
         final ListView listview = (ListView) findViewById(R.id.mainListview);
 
 
@@ -105,10 +102,7 @@ private int i;
 ////
 ////
 ////                                }else{
-////
-////
-////
-////                                }
+//                            }
 ////
 ////
 ////
@@ -124,21 +118,7 @@ private int i;
 //
 //
 //                    }else{
-//
-//
 //                    }
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
 //                }
 //            });
 //
@@ -175,17 +155,9 @@ private int i;
             causesList.add(values[i]);
         }
 
-
         for (int i = 0; i < values.length; ++i) {
             descriptionList.add(values2[i]);
         }
-
-
-
-
-
-
-
 
 //        //uncomment when we will have the images stored in Bitmap[] images
 //        final ArrayList<Bitmap> imageList = new ArrayList<Bitmap>();
@@ -213,10 +185,10 @@ private int i;
 //                            }
 //                        });
 
-                Intent intent = new Intent(MainActivity.this, EventActivity.class);
-                //intent.putExtra("key", 1);
-                startActivity(intent);
-                finish();
+            Intent intent = new Intent(MainActivity.this, EventActivity.class);
+            //intent.putExtra("key", 1);
+            startActivity(intent);
+            finish();
             }
 
         });

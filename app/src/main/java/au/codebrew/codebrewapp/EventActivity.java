@@ -44,6 +44,14 @@ public class EventActivity extends Activity {
             }
         });
 
+        imageButton2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(EventActivity.this, DonateItemActivity.class);
+                startActivity(intent);
+            }
+        });
+
         imageButton1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

@@ -10,4 +10,16 @@
     <string name="title_activity_payment">PaymentActivity</string>
     <string name="title_activity_payment_success">PaymentSuccessActivity</string>
     <string name="confirmation">Thanks for supporting our goal to build a better world. You will receive a confirmation email and your rewards shortly.</string>
+    <string name="title_activity_donate_item">DonateItemActivity</string>
+
+    <string-array name="planets_array">
+        <item>Mercury</item>
+        <item>Venus</item>
+        <item>Earth</item>
+        <item>Mars</item>
+        <item>Jupiter</item>
+        <item>Saturn</item>
+        <item>Uranus</item>
+        <item>Neptune</item>
+    </string-array>
 </resources>
