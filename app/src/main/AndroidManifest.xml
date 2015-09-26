@@ -20,6 +20,14 @@
             android:name=".EventActivity"
             android:label="@string/title_activity_event" >
         </activity>
+        <activity
+            android:name=".PaymentActivity"
+            android:label="@string/title_activity_payment" >
+        </activity>
+        <activity
+            android:name=".PaymentSuccessActivity"
+            android:label="@string/title_activity_payment_success" >
+        </activity>
     </application>
 
 </manifest>

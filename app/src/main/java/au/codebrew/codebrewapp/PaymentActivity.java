@@ -1,53 +1,35 @@
 package au.codebrew.codebrewapp;
 
-import android.app.Activity;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.util.Log;
 import android.view.View;
-import android.widget.ImageButton;
-import android.widget.ImageView;
+import android.widget.Button;
 
-public class EventActivity extends Activity {
+public class PaymentActivity extends AppCompatActivity {
+    private Button btnConfirm = null;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_event);
+        setContentView(R.layout.activity_payment);
 
-//        int id = this.getIntent().getExtras().getInt("key");
-//        Log.e("key: ", "" + id);
-
-        ImageView imageView = (ImageView) findViewById(R.id.mainImageView);
-        imageView.setImageResource(R.drawable.google);
-
-
-        ImageButton imageButton1 = (ImageButton) findViewById(R.id.buttonImageView1);
-        ImageButton imageButton2 = (ImageButton) findViewById(R.id.buttonImageView2);
-        ImageButton imageButton3 = (ImageButton) findViewById(R.id.buttonImageView3);
-
-
-        imageButton1.setImageResource(R.drawable.moneybutton);
-        imageButton2.setImageResource(R.drawable.itemsbutton);
-        imageButton3.setImageResource(R.drawable.volunteerbutton);
-
-        imageButton1.setOnClickListener(new View.OnClickListener() {
+        btnConfirm = (Button) findViewById(R.id.button_confirm);
+        btnConfirm.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(EventActivity.this, PaymentActivity.class);
+                Intent intent = new Intent(PaymentActivity.this, PaymentSuccessActivity.class);
                 startActivity(intent);
             }
         });
-
     }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_event, menu);
+        getMenuInflater().inflate(R.menu.menu_payment, menu);
         return true;
     }
 
