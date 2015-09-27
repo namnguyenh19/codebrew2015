@@ -39,7 +39,7 @@ public class DonateItemActivity extends Activity {
         spinner_country.setAdapter(adapter1);
 
         ArrayAdapter<CharSequence> adapter2 = ArrayAdapter.createFromResource(this,
-                R.array.planets_array, android.R.layout.simple_spinner_item);
+                R.array.state_array, android.R.layout.simple_spinner_item);
         adapter2.setDropDownViewResource(android.R.layout.simple_spinner_item);
         spinner_state.setAdapter(adapter2);
 
