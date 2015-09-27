@@ -65,7 +65,8 @@
         android:layout_toStartOf="@+id/spinner_state"
         android:layout_below="@+id/spinner_country"
         android:paddingRight="40px"
-        android:paddingEnd="40px"/>
+        android:paddingEnd="40px"
+        />
 
     <ImageView
         android:id="@+id/imageView9"

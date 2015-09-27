@@ -16,28 +16,20 @@
         android:layout_height="wrap_content"
         android:text="Payment Details"
         android:id="@+id/textView_title"
-        android:textSize="15pt" />
+        android:textSize="15pt"
+        android:typeface="monospace"
+        android:textColor="#ff0089d1"/>
 
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/editText"
         android:layout_gravity="center_horizontal"
-        android:text="Country"
+        android:text="First Name"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:layout_below="@+id/textView_title"/>
-
-    <EditText
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:inputType="textPersonName"
-        android:text="First Name"
-        android:ems="10"
-        android:id="@+id/editText2"
-        android:layout_below="@+id/editText"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"/>
+        android:layout_below="@+id/textView_title"
+        android:typeface="monospace"/>
 
     <EditText
         android:layout_width="match_parent"
@@ -45,11 +37,24 @@
         android:inputType="textPersonName"
         android:text="Last Name"
         android:ems="10"
+        android:id="@+id/editText2"
+        android:layout_below="@+id/editText"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:typeface="monospace"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:text="Email"
+        android:ems="10"
         android:id="@+id/editText3"
         android:layout_gravity="center_horizontal"
         android:layout_below="@+id/editText2"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"/>
+        android:layout_alignParentStart="true"
+        android:typeface="monospace"/>
 
     <EditText
         android:layout_width="match_parent"
@@ -61,7 +66,8 @@
         android:text="Card Number"
         android:layout_below="@+id/editText3"
         android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true"/>
+        android:layout_alignParentEnd="true"
+        android:typeface="monospace"/>
 
     <EditText
         android:layout_width="wrap_content"
@@ -73,8 +79,9 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:text="Expire Date"
-        android:layout_alignRight="@+id/textView_title"
-        android:layout_alignEnd="@+id/textView_title"/>
+        android:typeface="monospace"
+        android:layout_alignRight="@+id/button_confirm"
+        android:layout_alignEnd="@+id/button_confirm" />
 
     <EditText
         android:layout_width="wrap_content"
@@ -85,7 +92,9 @@
         android:layout_alignBottom="@+id/editText5"
         android:layout_toRightOf="@+id/editText5"
         android:layout_toEndOf="@+id/editText5"
-        android:text="CVV"/>
+        android:text="CVV"
+        android:paddingRight="10dp"
+        android:typeface="monospace"/>
 
     <EditText
         android:layout_width="wrap_content"
@@ -98,7 +107,8 @@
         android:layout_alignParentStart="true"
         android:text="Address Line"
         android:layout_alignRight="@+id/editText6"
-        android:layout_alignEnd="@+id/editText6"/>
+        android:layout_alignEnd="@+id/editText6"
+        android:typeface="monospace"/>
 
     <EditText
         android:layout_width="wrap_content"
@@ -106,12 +116,13 @@
         android:inputType="textPostalAddress"
         android:ems="10"
         android:id="@+id/editText8"
-        android:text="City"
+        android:text="Post Code"
         android:layout_below="@+id/editText7"
-        android:layout_alignRight="@+id/editText5"
-        android:layout_alignEnd="@+id/editText5"
         android:layout_alignLeft="@+id/button_confirm"
-        android:layout_alignStart="@+id/button_confirm"/>
+        android:layout_alignStart="@+id/button_confirm"
+        android:typeface="monospace"
+        android:layout_alignRight="@+id/button_confirm"
+        android:layout_alignEnd="@+id/button_confirm" />
 
     <EditText
         android:layout_width="wrap_content"
@@ -122,7 +133,9 @@
         android:layout_below="@+id/editText7"
         android:layout_toEndOf="@+id/editText5"
         android:text="State"
-        android:layout_toRightOf="@+id/editText5"/>
+        android:paddingRight="10dp"
+        android:layout_toRightOf="@+id/editText5"
+        android:typeface="monospace"/>
 
     <EditText
         android:layout_width="wrap_content"
@@ -134,8 +147,9 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:layout_toStartOf="@+id/button_confirm"
-        android:text="Post Code"
-        android:layout_toLeftOf="@+id/button_confirm"/>
+        android:text="City"
+        android:layout_toLeftOf="@+id/button_confirm"
+        android:typeface="monospace"/>
 
     <EditText
         android:layout_width="wrap_content"
@@ -146,9 +160,11 @@
         android:layout_below="@+id/editText10"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
+        android:text="Country"
+        android:typeface="monospace"
+        android:layout_toStartOf="@+id/editText13"
         android:layout_alignRight="@+id/editText9"
-        android:layout_alignEnd="@+id/editText9"
-        android:text="Email"/>
+        android:layout_alignEnd="@+id/editText9" />
 
     <EditText
         android:layout_width="wrap_content"
@@ -159,7 +175,8 @@
         android:layout_below="@+id/editText11"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:text="Contact"/>
+        android:text="Contact"
+        android:typeface="monospace"/>
 
     <EditText
         android:layout_width="wrap_content"
@@ -170,12 +187,17 @@
         android:layout_below="@+id/editText11"
         android:layout_toRightOf="@+id/editText12"
         android:layout_toEndOf="@+id/editText12"
-        android:text="Amount"/>
+        android:text="Amount"
+        android:typeface="monospace"/>
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Confirm Payment"
+        android:padding="5dp"
+        android:typeface="monospace"
+        android:background="#ff0089d1"
+        android:textColor="#fff3f9fc"
         android:id="@+id/button_confirm"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"

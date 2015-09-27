@@ -14,7 +14,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/thank_you"
-        android:textSize="13pt"
+        android:textSize="11pt"
         android:layout_marginTop="119dp"
         android:gravity="center_vertical|center_horizontal"
         android:layout_alignParentTop="true"
@@ -24,7 +24,8 @@
         android:layout_marginEnd="39dp"
         android:layout_toEndOf="@+id/imageView"
         android:layout_above="@+id/textView"
-        android:layout_toRightOf="@+id/imageView"/>
+        android:layout_toRightOf="@+id/imageView"
+        android:typeface="monospace"/>
 
     <ImageView
         android:layout_width="200px"
@@ -35,7 +36,7 @@
         android:layout_marginStart="39dp"
         android:layout_alignBottom="@+id/thank_you"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"/>
+        android:layout_alignParentStart="true" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -47,15 +48,20 @@
         android:layout_alignLeft="@+id/imageView"
         android:layout_alignStart="@+id/imageView"
         android:layout_alignRight="@+id/thank_you"
-        android:layout_alignEnd="@+id/thank_you"/>
+        android:layout_alignEnd="@+id/thank_you"
+        android:typeface="monospace"/>
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Back to Home"
         android:id="@+id/button2"
+        android:padding="5dp"
         android:layout_below="@+id/textView"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="50dp"/>
+        android:layout_marginTop="50dp"
+        android:background="#ff0089d1"
+        android:textColor="#fff3f9fc"
+        android:typeface="monospace"/>
 
 </RelativeLayout>

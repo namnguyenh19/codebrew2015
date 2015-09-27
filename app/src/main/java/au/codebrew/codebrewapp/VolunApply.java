@@ -84,7 +84,7 @@ imageView = (ImageView)findViewById(R.id.imageView);
 
                 volunteerApplication.saveInBackground();
 
-                Intent intent = new Intent(VolunApply.this, VolunResult.class);
+                Intent intent = new Intent(VolunApply.this, PaymentSuccessActivity.class);
                 startActivity(intent);
 
 
@@ -101,36 +101,36 @@ imageView = (ImageView)findViewById(R.id.imageView);
 
 
 
-        ParseQuery<ParseObject> query = ParseQuery.getQuery("Event");
-        query.getInBackground(EventID, new GetCallback<ParseObject>() {
-            public void done(ParseObject object, ParseException e) {
-                if (e == null) {
-                    // object will be your game score
-
-
-                    ParseFile EventImage = (ParseFile) object.get("Image");
-                    EventImage.getDataInBackground(new GetDataCallback() {
-                        public void done(byte[] data, ParseException e) {
-                            if (e == null) {
-
-                                Bitmap bmp = BitmapFactory.decodeByteArray(data, 0, data.length);
-                                bmp = Bitmap.createScaledBitmap(bmp, 400, 100, false);
-
-                                imageView.setImageBitmap(bmp);
-
-
-                            } else {
-                                // something went wrong
-                            }
-                        }
-                    });
-
-
-                } else {
-                    // something went wrong
-                }
-            }
-        });
+//        ParseQuery<ParseObject> query = ParseQuery.getQuery("Event");
+//        query.getInBackground(EventID, new GetCallback<ParseObject>() {
+//            public void done(ParseObject object, ParseException e) {
+//                if (e == null) {
+//                    // object will be your game score
+//
+//
+//                    ParseFile EventImage = (ParseFile) object.get("Image");
+//                    EventImage.getDataInBackground(new GetDataCallback() {
+//                        public void done(byte[] data, ParseException e) {
+//                            if (e == null) {
+//
+//                                Bitmap bmp = BitmapFactory.decodeByteArray(data, 0, data.length);
+//                                bmp = Bitmap.createScaledBitmap(bmp, 400, 100, false);
+//
+//                                imageView.setImageBitmap(bmp);
+//
+//
+//                            } else {
+//                                // something went wrong
+//                            }
+//                        }
+//                    });
+//
+//
+//                } else {
+//                    // something went wrong
+//                }
+//            }
+//        });
 
 
 

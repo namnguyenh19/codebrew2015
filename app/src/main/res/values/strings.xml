@@ -18,6 +18,7 @@
     <string name="title_activity_intro2">Intro2Activity</string>
 
     <string-array name="donation_array">
+        <item>Any</item>
         <item>Money</item>
         <item>Clothes</item>
         <item>Volunteering</item>
@@ -25,6 +26,7 @@
     </string-array>
 
     <string-array name="country_array">
+        <item>Any</item>
         <item>Syria</item>
         <item>Libya</item>
         <item>Egypt</item>

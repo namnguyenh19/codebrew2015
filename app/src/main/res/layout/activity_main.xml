@@ -27,30 +27,37 @@
             android:orientation="horizontal">
 
             <TextView
+                android:paddingTop="10dp"
                 android:layout_width="40pt"
                 android:layout_height="20pt"
                 android:textAppearance="?android:attr/textAppearanceMedium"
-                android:text="Donation:"
-                android:id="@+id/textView18"/>
+                android:text="  Type:"
+                android:id="@+id/textView18"
+                android:typeface="monospace"/>
             <Spinner
-                android:layout_width="40pt"
+                android:layout_width="35pt"
                 android:layout_height="20pt"
                 android:id="@+id/donationspinner"
                 android:drawSelectorOnTop="true"
-                android:entries="@array/donation_array"/>
+                android:entries="@array/donation_array"
+                android:typeface="monospace"/>
 
             <TextView
+               android:paddingTop="10dp"
                 android:layout_width="40pt"
                 android:layout_height="20pt"
                 android:textAppearance="?android:attr/textAppearanceMedium"
                 android:text="Country:"
-                android:id="@+id/textView28"/>
+                android:id="@+id/textView28"
+                android:typeface="monospace"/>
             <Spinner
-                android:layout_width="40pt"
+                android:layout_width="35pt"
                 android:layout_height="20pt"
                 android:id="@+id/countryspinner"
                 android:drawSelectorOnTop="true"
-                android:entries="@array/country_array"/>
+                android:entries="@array/country_array"
+                android:typeface="monospace"
+                />
 
         </LinearLayout>
 

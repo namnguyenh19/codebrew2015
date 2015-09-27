@@ -46,7 +46,8 @@
                     android:layout_height="wrap_content"
                     android:textAppearance="?android:attr/textAppearanceLarge"
                     android:text="Syrian refugees"
-                    android:id="@+id/titleTextView" />
+                    android:id="@+id/titleTextView"
+                    android:typeface="monospace"/>
 
                 <TextView
                     android:paddingTop="5dp"
@@ -55,7 +56,8 @@
                     android:layout_height="wrap_content"
                     android:textAppearance="?android:attr/textAppearanceMedium"
                     android:text="Red cross"
-                    android:id="@+id/organizationTextView" />
+                    android:id="@+id/organizationTextView"
+                    android:typeface="monospace"/>
                 <RelativeLayout
                     android:layout_marginTop="15dp"
                     android:layout_height="wrap_content"
@@ -96,7 +98,8 @@
             android:layout_height="20dp"
             android:text=" "
             android:id="@+id/spaceTextView"
-            android:layout_gravity="center_horizontal" />
+            android:layout_gravity="center_horizontal"
+            android:typeface="monospace"/>
 
         <TextView
             android:layout_width="match_parent"

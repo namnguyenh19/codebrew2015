@@ -32,7 +32,7 @@ public class MainActivity extends Activity {
 
     //final String[] EVEID = {"X66VaIcndS","Ng5vXZHZXO","7A93yxSnaH","Kqc5B8FEx4","dI8LwOJRim","M4beADfW90","0XmrQgRy1c","wcMBey5leA"};
 
-    final String[] values = new String[]{"Snowstorm in Canada", "Hurricane Sandy in United States","Flood in India","Earthquake in Nepal","Draught in Africa","Famine in Somalia","War Refugees from Syria","Tsunami in Japan"};
+    final String[] values = new String[]{"Snowstorm in Canada", "Hurricane Sandy in U.S.","Flood in India","Earthquake in Nepal","Draught in Africa","Famine in Somalia","War Refugees from Syria","Tsunami in Japan"};
 
     final String[] values2 = new String[]{"Food   Clothes   Volunteer", "Food   Money   Clothes", "Volunteer   Clothes",
             "Food Volunteer", "Food Money", "Money Volunteer", "Clothes Volunteer", "Food Volunteer"};

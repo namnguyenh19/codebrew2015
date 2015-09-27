@@ -26,7 +26,8 @@
             android:singleLine="true"
             android:text="Description"
             android:textSize="12sp"
-            android:layout_marginLeft="10dp"/>
+            android:layout_marginLeft="10dp"
+            android:typeface="monospace"/>
 
         <TextView
             android:id="@+id/firstLine"
@@ -40,6 +41,7 @@
             android:gravity="center_vertical"
             android:text="Example application"
             android:textSize="16sp"
-            android:layout_marginLeft="10dp"/>
+            android:layout_marginLeft="10dp"
+            android:typeface="monospace"/>
 
     </RelativeLayout>
